@@ -6,19 +6,20 @@
     <title>Conversor de divisas</title>
     <style>
       body {
-        background: #00ba88;
+        background: pink;
         margin: 2px;
         padding: 2px;
       }
+
       .darkMode {
-        color: white;
         background: black;
+        color: white;
       }
     </style>
   </head>
   <body>
     <!-- BIENVENIDA AL USUARIO -->
-    <main id="darkMode">
+    <main id="main">
       <input type="text" id="nombreUsuario" placeholder="Ingrese su nombre" />
       <h1 id="saludoUsuario"></h1>
 
@@ -54,14 +55,12 @@
         width="50px"
       />
       <img src="euro.png" alt="Signo Euro" id="iconEuro" width="50px" />
-
-      <!-- FOOTER -->
     </main>
     <hr />
 
-    🌝 🌚 🌞 ☀
-
-    <footer>
+    <!-- FOOTER -->
+    <footer id="foo">
+      FOOTER 🌝 🌚 🌞 ☀
       <button id="footerBtn">Dark mode</button>
     </footer>
 
@@ -110,10 +109,23 @@
       });
 
       // SCRIPT DARK MODE
+      let foo = document.getElementById("foo");
       let footerBtn = document.getElementById("footerBtn");
+      let main = document.getElementById("main");
+
+      //     footerBtn.addEventListener("click", () => {
+      //      if (foo.style.background != "red") {
+      //      foo.style.background = "red";
+      //    foo.style.color = "white";
+      //  } else {
+      //   foo.style.background = "pink";
+      //  foo.style.color = "black";
+      // }
+      //});
 
       footerBtn.addEventListener("click", () => {
         main.classList.toggle("darkMode");
+        foo.classList.toggle("darkMode");
       });
     </script>
   </body>
