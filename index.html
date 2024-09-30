@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de divisas</title>
+    <style>
+      body {
+        background: pink;
+        margin: 2px;
+        padding: 2px;
+      }
+
+      .darkMode {
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- BIENVENIDA AL USUARIO -->
+    <main id="main">
+      <input type="text" id="nombreUsuario" placeholder="Ingrese su nombre" />
+      <h1 id="saludoUsuario"></h1>
+
+      <!-- BOTON DE INGRESO -->
+      <button id="signIn">Sign in</button>
+
+      <hr />
+      <br />
+
+      <h3>AR$</h3>
+
+      <!-- Input $$ dinero a convertir $$ -->
+      <input type="text" id="montoInicial" placeholder="Monto a convertir" />
+
+      <!-- $$ dinero convertido $$ -->
+      <select id="divisaSelect">
+        <option>Selecione su divisa</option>
+        <option id="optionDolar">Dolar</option>
+        <option id="optionDolarBlue">Dolar Blue</option>
+        <option id="optionEuro">Euro</option>
+      </select>
+
+      <h3>Conversión</h3>
+      <input type="text" id="conversion" />
+
+      <!-- Icon de divisas -->
+
+      <img src="dolar.png" alt="Signo Dolar" id="iconDolar" width="50px" />
+      <img
+        src="dolarBlue.png"
+        alt="Signo Dolar Blue"
+        id="iconDolarBlue"
+        width="50px"
+      />
+      <img src="euro.png" alt="Signo Euro" id="iconEuro" width="50px" />
+    </main>
+    <hr />
+
+    <!-- FOOTER -->
+    <footer id="foo">
+      FOOTER 🌝 🌚 🌞 ☀
+      <button id="footerBtn">Dark mode</button>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="index.js"></script>
+  </body>
+</html>
