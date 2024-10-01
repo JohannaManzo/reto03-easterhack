@@ -20,51 +20,51 @@
   <body>
     <!-- BIENVENIDA AL USUARIO -->
     <main id="main">
-      <input type="text" id="nombreUsuario" placeholder="Ingrese su nombre" />
+      <div id="seccionLogIn">
+        <input type="text" id="nombreUsuario" placeholder="Ingrese su nombre" />
+
+        <!-- BOTON DE INGRESO -->
+        <button id="signIn">Sign in</button>
+      </div>
       <h1 id="saludoUsuario"></h1>
 
-      <!-- BOTON DE INGRESO -->
-      <button id="signIn">Sign in</button>
+      <div id="seccionCalculadora">
+        <h3>AR$</h3>
 
-      <hr />
-      <br />
+        <!-- Input $$ dinero a convertir $$ -->
+        <input type="text" id="montoInicial" placeholder="Monto a convertir" />
 
-      <h3>AR$</h3>
+        <!-- $$ dinero convertido $$ -->
+        <select id="divisaSelect">
+          <option>Selecione su divisa</option>
+          <option id="optionDolar">Dolar</option>
+          <option id="optionDolarBlue">Dolar Blue</option>
+          <option id="optionEuro">Euro</option>
+        </select>
 
-      <!-- Input $$ dinero a convertir $$ -->
-      <input type="text" id="montoInicial" placeholder="Monto a convertir" />
+        <h3>Conversión</h3>
+        <input type="text" id="conversion" />
 
-      <!-- $$ dinero convertido $$ -->
-      <select id="divisaSelect">
-        <option>Selecione su divisa</option>
-        <option id="optionDolar">Dolar</option>
-        <option id="optionDolarBlue">Dolar Blue</option>
-        <option id="optionEuro">Euro</option>
-      </select>
-
-      <h3>Conversión</h3>
-      <input type="text" id="conversion" />
-
-      <!-- Icon de divisas -->
-
-      <img src="dolar.png" alt="Signo Dolar" id="iconDolar" width="50px" />
-      <img
-        src="dolarBlue.png"
-        alt="Signo Dolar Blue"
-        id="iconDolarBlue"
-        width="50px"
-      />
-      <img src="euro.png" alt="Signo Euro" id="iconEuro" width="50px" />
+        <img src="dolar.png" alt="Signo Dolar" id="iconDolar" width="50px" />
+        <img
+          src="dolarBlue.png"
+          alt="Signo Dolar Blue"
+          id="iconDolarBlue"
+          width="50px"
+        />
+        <img src="euro.png" alt="Signo Euro" id="iconEuro" width="50px" />
+      </div>
     </main>
-    <hr />
 
     <!-- FOOTER -->
-    <footer id="foo">
-      FOOTER 🌝 🌚 🌞 ☀
-      <button id="footerBtn">Dark mode</button>
-    </footer>
+    <div id="seccionFooter">
+      <footer id="foo">
+        FOOTER 🌝 🌚 🌞 ☀
+        <button id="footerBtn">Dark mode</button>
+      </footer>
 
-    <!-- SCRIPT -->
-    <script src="index.js"></script>
+      <!-- SCRIPT -->
+      <script src="index.js"></script>
+    </div>
   </body>
 </html>

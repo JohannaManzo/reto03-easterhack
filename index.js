@@ -1,11 +1,15 @@
+seccionCalculadora.style.display = "none";
+
 // BIENVENIDA AL USUARIO
 const bienvenidaUsuario = () => {
   let saludoUsuario = document.getElementById("saludoUsuario");
   let nombreUsuario = document.getElementById("nombreUsuario").value;
   if (nombreUsuario == "") {
     saludoUsuario.innerHTML = "Lo siento, debes ingresar un nombre";
+    seccionCalculadora.style.display = "none";
   } else {
     saludoUsuario.innerHTML = "BIENVENIDX " + nombreUsuario;
+    seccionCalculadora.style.display = "block";
   }
 };
 
@@ -42,16 +46,6 @@ divisaSelect.addEventListener("change", () => {
 let foo = document.getElementById("foo");
 let footerBtn = document.getElementById("footerBtn");
 let main = document.getElementById("main");
-
-//     footerBtn.addEventListener("click", () => {
-//      if (foo.style.background != "red") {
-//      foo.style.background = "red";
-//    foo.style.color = "white";
-//  } else {
-//   foo.style.background = "pink";
-//  foo.style.color = "black";
-// }
-//});
 
 footerBtn.addEventListener("click", () => {
   main.classList.toggle("darkMode");
