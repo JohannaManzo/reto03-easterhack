@@ -1,3 +1,4 @@
+let seccionCalculadora = document.getElementById("seccionCalculadora");
 seccionCalculadora.style.display = "none";
 
 // BIENVENIDA AL USUARIO
@@ -8,7 +9,7 @@ const bienvenidaUsuario = () => {
     saludoUsuario.innerHTML = "Lo siento, debes ingresar un nombre";
     seccionCalculadora.style.display = "none";
   } else {
-    saludoUsuario.innerHTML = "BIENVENIDX " + nombreUsuario;
+    saludoUsuario.innerHTML = "Convirtamos tú dinero, " + nombreUsuario;
     seccionCalculadora.style.display = "block";
   }
 };

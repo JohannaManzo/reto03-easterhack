@@ -1,0 +1,35 @@
+
+body {
+  background: #afcda1;
+  margin: 0;
+  padding: 0;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+/* Seccion LogIn */
+#seccionLogIn {
+    margin-top: 90px;
+}
+
+/* iNPUT´S */
+#signIn {
+    border-radius: 8px;
+    border-width: 1px;
+}
+
+#seccionLogIn, #seccionFooter, #saludoUsuario {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* DARK MODE */
+.darkMode {
+  background: #171b15;
+  color: white;
+}
