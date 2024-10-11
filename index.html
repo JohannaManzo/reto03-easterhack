@@ -3,28 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/989da85841.js" crossorigin="anonymous"></script>
     <title>Conversor de divisas</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
     <!-- BIENVENIDA AL USUARIO -->
     <main id="main">
+  <div class="container">
+
       <div id="seccionLogIn">
         <input type="text" id="nombreUsuario" placeholder="Ingrese su nombre" />
 
         <!-- BOTON DE INGRESO -->
-        <button id="signIn">Sign in</button>
+        <button id="signIn">Sign In</button>
       </div>
 
       <h1 id="saludoUsuario"></h1>
 
       <div id="seccionCalculadora">
+
+        <div class="contenedorDinero"> 
         <h3>AR$</h3>
 
         <!-- Input $$ dinero a convertir $$ -->
         <input type="text" id="montoInicial" placeholder="Monto a convertir" />
 
-        <!-- $$ dinero convertido $$ -->
         <select id="divisaSelect">
           <option>Selecione su divisa</option>
           <option id="optionDolar">Dolar</option>
@@ -32,29 +36,28 @@
           <option id="optionEuro">Euro</option>
         </select>
 
-        <h3>Conversión</h3>
-        <input type="text" id="conversion" />
-
-        <img src="dolar.png" alt="Signo Dolar" id="iconDolar" width="50px" />
-        <img
-          src="dolarBlue.png"
-          alt="Signo Dolar Blue"
-          id="iconDolarBlue"
-          width="50px"
-        />
-        <img src="euro.png" alt="Signo Euro" id="iconEuro" width="50px" />
-      </div>
+        <!-- DINERO CONVERTIDO -->
+      </div class="contenedorDineroConvertido">
+        <h3 class="conversion">Conversión</h3>
+        <input type="text" id="conversion" />   
+    </div>
+    
+  </div>
     </main>
 
     <!-- FOOTER -->
     <div id="seccionFooter">
       <footer id="foo">
-        FOOTER 🌝 🌚 🌞 ☀
-        <button id="footerBtn">Dark mode</button>
+        Copyright @johamanzo_
+        <button id="footerBtn">
+          <span><i class="fa-solid fa-sun"></i></span>
+          <span><i class="fa-solid fa-moon"></i></i></span>
+        </button>
       </footer>
 
       <!-- SCRIPT -->
       <script src="index.js"></script>
     </div>
+  </div>
   </body>
 </html>

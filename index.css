@@ -1,10 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background: #afcda1;
-  margin: 0;
-  padding: 0;
-  margin: 0px;
   font-family: sans-serif;
+  
 }
 
 /* Seccion LogIn */
@@ -15,21 +17,67 @@ body {
 /* iNPUT´S */
 #signIn {
     border-radius: 8px;
-    border-width: 1px;
+    width: 60px;
+    background-color: #749762;
 }
 
-#seccionLogIn, #seccionFooter, #saludoUsuario {
-    display: flex;
-    justify-content: center;
+.contenedorDinero {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.contenedorDineroConvertido {
+  padding-top: 20px;
+  margin-top: 50px;
+}
+
+/* INGRESO DE DINERO */
+
+.conversion {
+  margin-top: 150px;
+}
+
+/* CONTAINER */
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height:80vh;
+}
+
+#seccionCalculadora {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 50%;
 }
 
 
+/* SELECT DIVISA */
+
+#divisaSelect:hover {
+  background-color: #618d4a;
+}
 
 
-
-
-/* DARK MODE */
+/* FOOTER */
 .darkMode {
   background: #171b15;
   color: white;
+}
+
+#foo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 20vh;
+}
+
+#footerBtn {
+  width: 50px;
+  height: 30px;
+  margin-left: 20px;
 }

@@ -5,12 +5,15 @@ seccionCalculadora.style.display = "none";
 const bienvenidaUsuario = () => {
   let saludoUsuario = document.getElementById("saludoUsuario");
   let nombreUsuario = document.getElementById("nombreUsuario").value;
+  if (nombreUsuario != "") {
+    seccionLogIn.style.display = "none";
+  }
   if (nombreUsuario == "") {
     saludoUsuario.innerHTML = "Lo siento, debes ingresar un nombre";
     seccionCalculadora.style.display = "none";
   } else {
     saludoUsuario.innerHTML = "Convirtamos tú dinero, " + nombreUsuario;
-    seccionCalculadora.style.display = "block";
+    seccionCalculadora.style.display = "flex";
   }
 };
 
