@@ -5,22 +5,21 @@
 
 body {
   background: #afcda1;
-  font-family: sans-serif;
-  
+  font-family: sans-serif; 
 }
 
-/* Seccion LogIn */
+/* SECCION LOGIN */
 #seccionLogIn {
     margin-top: 90px;
 }
 
-/* iNPUT´S */
 #signIn {
     border-radius: 8px;
     width: 60px;
-    background-color: #749762;
+    background-color: #b3f095;
 }
 
+/* CONTENEDOR DE DINERO A CONVERTIR Y CONVERTIDO */
 .contenedorDinero {
   margin-top: 20px;
   display: flex;
@@ -32,14 +31,13 @@ body {
   margin-top: 50px;
 }
 
-/* INGRESO DE DINERO */
-
+/* DINERO CONVERTIDO */
 .conversion {
   margin-top: 150px;
 }
 
-/* CONTAINER */
 
+/* CONTAINER */
 .container {
   display: flex;
   justify-content: center;
@@ -48,6 +46,7 @@ body {
   height:80vh;
 }
 
+/* CALCULADORA */
 #seccionCalculadora {
   display: flex;
   justify-content: center;
@@ -57,7 +56,6 @@ body {
 
 
 /* SELECT DIVISA */
-
 #divisaSelect:hover {
   background-color: #618d4a;
 }
