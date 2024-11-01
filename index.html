@@ -35,12 +35,14 @@
         <input type="text" id="montoInicial" placeholder="Monto a convertir" />
 
         <!-- SELECCIONADOR DE DIVISA -->
-        <select id="divisaSelect">
-          <option>Selecione su divisa</option>
-          <option id="optionDolar">Dolar</option>
-          <option id="optionDolarBlue">Dolar Blue</option>
-          <option id="optionEuro">Euro</option>
+        <select id="divisaSelect" onchange="change(this)">
+          <option value="bolsa">Selecione su divisa</option>
+          <option value="dolar" id="optionDolar">Dolar</option>
+          <option value="dolarBlue" id="optionDolarBlue">Dolar Blue</option>
+          <option value="euro" id="optionEuro">Euro</option>
         </select>
+
+        <img id="imagenId" src="bolsa.png" alt="bolsa de dinero" width="30px">
 
         <!-- DINERO CONVERTIDO -->
       </div class="contenedorDineroConvertido">

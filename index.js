@@ -25,6 +25,9 @@ signIn.addEventListener("click", bienvenidaUsuario);
 let divisaSelect = document.getElementById("divisaSelect");
 
 divisaSelect.addEventListener("change", () => {
+  let imagenId = document.getElementById("imagenId");
+  imagenId.setAttribute("src", divisaSelect.value + ".png");
+
   let montoInicial = document.getElementById("montoInicial").value;
   if ("Dolar" == divisaSelect.value) {
     let resultado = montoInicial / 920;
