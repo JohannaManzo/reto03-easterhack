@@ -25,29 +25,34 @@ signIn.addEventListener("click", bienvenidaUsuario);
 let divisaSelect = document.getElementById("divisaSelect");
 
 divisaSelect.addEventListener("change", () => {
-  let imagenId = document.getElementById("imagenId");
-  imagenId.setAttribute("src", divisaSelect.value + ".png");
-
   let montoInicial = document.getElementById("montoInicial").value;
+  let imagenId = document.getElementById("imagenId");
   if ("Dolar" == divisaSelect.value) {
+    imagenId.setAttribute("src", divisaSelect.value + ".png");
     let resultado = montoInicial / 920;
     console.log(resultado);
     resultado = resultado.toFixed(2);
     conversion.value = resultado + "U$D";
   }
-  if ("Dolar Blue" == divisaSelect.value) {
+  if ("Blue" == divisaSelect.value) {
+    imagenId.setAttribute("src", divisaSelect.value + ".png");
+    console.log(imagenId);
     let resultado = montoInicial / 1045;
     console.log(resultado);
     resultado = resultado.toFixed(2);
     conversion.value = resultado + "U$D";
   }
   if ("Euro" == divisaSelect.value) {
+    imagenId.setAttribute("src", divisaSelect.value + ".png");
     let resultado = montoInicial / 1130;
     console.log(resultado);
     resultado = resultado.toFixed(2);
     conversion.value = resultado + "€";
   }
 });
+
+// let imagenId = document.getElementById("imagenId");
+//imagenId.setAttribute("src", divisaSelect.value + ".png");
 
 // SCRIPT DARK MODE
 let foo = document.getElementById("foo");
